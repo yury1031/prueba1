@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Fruver mi tierra</title>
+    <link rel="stylesheet" href="ingresar.js">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="img/png" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body style="background-color: #F4FCD9;">
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ingresa usuario y contraseña</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Usuario</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Contraseña</label>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn text-light" style="background-color: #82A284;">Ingresar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- header -->
+  <div class="container-fluid ">
+    <nav class="navbar navbar-expand-lg shadow p-3 mb-5 rounded" style="background-color: #82A284;">
+          <a class="navbar-brand mb-0 h1 m-2" style="color: #ffff;" href="#"><strong>Fruver mi tierra</strong></a>
+          <button class="navbar-toggler" style="background-color: #fff; color: #243D25;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">Clic</span>
+          </button>
+          
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light m-1 text-center" aria-current="page" href="#"><strong> Calidad del campo <br> colombiano 100% </strong></a>
+                  </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-light m-2 " href="Inicio.html"><strong> INICIO</strong></a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link text-light m-2" href="nosotros.html"><strong> NOSOTROS</strong></a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link active text-light m-2" aria-current="page" href="productos.html" title="BENEFICIOS" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="top" data-bs-content="Aquí puedes encontrar los beneficios de consumir nuestros productos del campo Colombiano"><strong> BENEFICIOS </strong></a>
+                </li>
+
+              </ul>
+                </div>  
+
+                <!-- menu -->
+                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <strong>MENÚ</strong>
+                </a>
+                <ul class="dropdown-menu" style="margin-left: 75%;" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="frutas.html">Frutas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="verduras.html">Verduras</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="legumbres.html">Legunbres</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="granja.html">Productos de granja</a></li>
+                </ul> 
+                <button type="button" class="btn btn-outline-light" style="margin-right: 15px;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"> <img src="images/perfil-del-usuario.png"><strong> INGRESA AQUÍ</strong></button> 
+                <img class="m-2" src="images/logo.png" width="70px">
+            </nav>
+        </div>  
+<!--         
+        slider -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button> -->
+
+             </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/10.png" class="d-block w-70 m-auto h-50" alt="...">
+              </div>
+
+              <div class="carousel-item">
+                <img src="images/11.png" class="d-block m-auto" alt="...">
+              </div>
+
+              <div class="carousel-item">
+                <img src="images/2.png" class="d-block m-auto" alt="...">
+              </div>
+
+              <div class="carousel-item">
+                <img src="images/3.png" class="d-block m-auto" alt="...">
+              </div>
+
+              <div class="carousel-item">
+                <img src="images/4.png" class="d-block m-auto" alt="...">
+              </div>
+
+              <div class="carousel-item">
+                <img src="images/5.png" class="d-block m-auto" alt="...">
+              </div>
+
+              <div class="carousel-item">
+                <img src="images/6.png" class="d-block m-auto" alt="...">
+              </div>
+
+              <div class="carousel-item">
+                <img src="images/7.png" class="d-block m-auto" alt="...">
+              </div>
+
+              <div class="carousel-item">
+                <img src="images/8.png" class="d-block w-70 m-auto" alt="...">
+              </div>
+
+              <div class="carousel-item">
+                <img src="images/9.png" class="d-block w-70 m-auto" alt="...">
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+<!-- Cartas -->
+
+<h1 class="text-center m-4"><strong>Productos con descuento</strong></h1>
+
+        <div class="container-fluid mt-4 d-flex m-4">
+          <div class="card mt-4 me-5 col " style="width: 18rem;">
+            <img src="images/tomate.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Tomate larga vida</strong></h5>
+              <p class="card-text">Precio por kilo: $1.900</p>
+              <a href="#" class="btn btn-primary">Añadir al carrito <img src="images/carrito-de-compras.png" style="margin-left: 30%; filter: invert(100%) sepia(100%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%);" alt=""></a>
+            </div>
+          </div>
+
+        <div class="card mt-4 me-5 col" style="width: 18rem;">
+          <img src="images/Leche-Entera.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Leche entera Alpina</strong></h5>
+            <p class="card-text">Precio 1.000 ml x 4: $18.000</p>
+            <a href="#" class="btn btn-primary">Añadir al carrito <img src="images/carrito-de-compras.png" style="margin-left: 30%; filter: invert(100%) sepia(100%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%);" alt=""></a>
+          </div>
+        </div>
+
+        <div class="card mt-4 me-5 col" style="width: 18rem;">
+          <img src="images/kikes.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Huevos kikes rojo AA</strong></h5>
+            <p class="card-text">Precio por 30 und: $16.000</p>
+            <a href="#" class="btn btn-primary">Añadir al carrito <img src="images/carrito-de-compras.png" style="margin-left: 30%; filter: invert(100%) sepia(100%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%);" alt=""></a>
+          </div>
+        </div>
+
+        <div class="card mt-4 me-5 col" style="width: 18rem;">
+          <img src="images/bananos.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Banano criollo</strong></h5>
+            <p class="card-text">Precio por 500g: $1.900</p>
+            <a href="#" class="btn btn-primary">Añadir al carrito <img src="images/carrito-de-compras.png" style="margin-left: 30%; filter: invert(100%) sepia(100%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%);" alt=""></a>
+          </div>
+        </div>
+
+
+      </div>
+
+        <div class="container-fluid mt-4 d-flex m-4">
+          <div class="card mt-4 me-5 col" style="width: 18rem;">
+            <img src="images/yogourt.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Yogurt Alpina mora</strong></h5>
+              <p class="card-text">Precio por 1.750g: $18.000</p>
+              <a href="#" class="btn btn-primary">Añadir al carrito <img src="images/carrito-de-compras.png" style="margin-left: 30%; filter: invert(100%) sepia(100%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%);" alt=""></a>
+            </div>
+          </div>
+
+        <div class="card mt-4 me-5 col" style="width: 18rem;">
+          <img src="images/pollo.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Pollo fresco</strong></h5>
+            <p class="card-text">Precio: $11.400</p>
+            <a href="#" class="btn btn-primary">Añadir al carrito <img src="images/carrito-de-compras.png" style="margin-left: 30%; filter: invert(100%) sepia(100%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%);" alt=""></a>
+          </div>
+        </div>
+
+        <div class="card mt-4 me-5 col" style="width: 18rem;">
+          <img src="images/arroz.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Arroz Diana</strong></h5>
+            <p class="card-text">Precio por kilo: $4.000</p>
+            <a href="#" class="btn btn-primary">Añadir al carrito <img src="images/carrito-de-compras.png" style="margin-left: 30%; filter: invert(100%) sepia(100%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%);" alt=""></a>
+          </div>
+        </div>
+
+        <div class="card mt-4 me-5 col" style="width: 18rem;">
+          <img src="images/lentejas.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><strong>lentejas Diana</strong></h5>
+            <p class="card-text">Precio por kilo: $7.000</p>
+            <a href="#" class="btn btn-primary">Añadir al carrito <img src="images/carrito-de-compras.png" style="margin-left: 30%; filter: invert(100%) sepia(100%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%);" alt=""></a>
+          </div>
+        </div>
+
+      </div>
+      </div>
+
+      <!-- tablas -->
+      <h1 class="text-center mt-4">Mira nuestros productos</h1>
+      <div class="container-fluid w-50" >
+        <table id="tfrutas" class="table table-success table-striped mt-4">
+          <thead>
+            <tr>
+              <th scope="col">Número</th>
+              <th scope="col">Frutas</th>
+              <th scope="col">Descripción</th>
+              <th scope="col">Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Banano</td>
+              <td>Urabá 500gr</td>
+              <td>$ 1.450</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Mango</td>
+              <td>Azúcar 500gr</td>
+              <td>$ 4.490</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Melón</td>
+              <td>Cantaloupe 1kg</td>
+              <td>$ 6.180</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Guayaba pera</td>
+              <td>500gr</td>
+              <td>$ 1.600</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Lulo</td>
+              <td>a granel 500gr</td>
+              <td>$ 4.750</td>
+            </tr>
+          </tbody>
+        </table>
+  
+        <table id="tvegetales" class="table table-success table-striped mt-4">
+          <thead>
+            <tr>
+              <th scope="col">Número</th>
+              <th scope="col">Verduras</th>
+              <th scope="col">Descripción</th>
+              <th scope="col">Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Plátano llanero</td>
+              <td>500gr</td>
+              <td>$ 2.700</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Pimentones</td>
+              <td>rojos y verdes 500gr</td>
+              <td>$ 3.150</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Cilantro</td>
+              <td>100gr</td>
+              <td>$ 1.200</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Ajo</td>
+              <td>malla</td>
+              <td>$ 2.300</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Papa criolla</td>
+              <td>500gr</td>
+              <td>$ 4.450</td>
+            </tr>
+          </tbody>
+        </table>
+  
+        <table id="tlegumbres" class="table table-success table-striped mt-4">
+          <thead>
+            <tr>
+              <th scope="col">Número</th>
+              <th scope="col">Legumbres</th>
+              <th scope="col">Descripción</th>
+              <th scope="col">Precio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Frijol</td>
+              <td>Bola roja 500gr</td>
+              <td>$ 4.600</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Arroz</td>
+              <td>Supremo 10kg</td>
+              <td>$ 35.500</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Garbanzo</td>
+              <td>500gr</td>
+              <td>$ 3.000</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Maíz pira</td>
+              <td>Crispetas alta calidad</td>
+              <td>$ 2.300</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Arroz integral</td>
+              <td>1000gr</td>
+              <td>$ 5.700</td>
+            </tr>
+          </tbody>
+        </table>
+  
+        <table id="tlacteos" class="table table-success table-striped mt-4">
+          <thead>
+            <tr>
+              <th scope="col">Número</th>
+              <th scope="col">Lácteos</th>
+              <th scope="col">Descripción</th>
+              <th scope="col">Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Queso</td>
+              <td>doble crema 250gr</td>
+              <td>$ 7.700</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>yogo yogo fresh</td>
+              <td>paquete, surtido x740g</td>
+              <td>$ 7.700</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Yogurt</td>
+              <td>bolsa 1000gr</td>
+              <td>$ 4.800</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Mantequilla</td>
+              <td>sin sal 250gr</td>
+              <td>$ 11.000</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Helado</td>
+              <td>Vainilla fresa 5L</td>
+              <td>$ 26.300</td>
+            </tr>
+          </tbody>
+        </table>
+  
+        <table id="tgranja" class="table table-success table-striped mt-4">
+          <thead>
+            <tr>
+              <th scope="col">Número</th>
+              <th scope="col">Granja</th>
+              <th scope="col">Descripcion</th>
+              <th scope="col">Precio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Costilla</td>
+              <td>bandeja 500gr</td>
+              <td>$ 7.700</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Carne molida</td>
+              <td>Res bandeja 500gr</td>
+              <td>$ 10.200</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>MielLok</td>
+              <td>natural 500gr</td>
+              <td>$ 18.500</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Panela fonce</td>
+              <td>Pastilla 900gr</td>
+              <td>$ 5.000</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Huevos</td>
+              <td>Orgánicos x 12</td>
+              <td>$ 9.900</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+
+      <!-- footer -->
+
+      <section class="">
+        <footer class="text-center text-white mt-5" style="background-color: #82A284;">
+
+          <div class="container p-4 pb-0">
+            <section class="">
+              <p class="d-flex justify-content-center align-items-center">
+                <span class="me-3">Registrate gratis</span>
+                <a  href="formulario.html" class="btn btn-outline-light btn-rounded">
+                  Registrate!
+                </a>
+              </p>
+            </section>
+          </div>
+
+          <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+              <!-- Facebook -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://es-la.facebook.com/"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-facebook-f"><img src="images/facebook 2.png" alt="insta"></i></a>
+        
+              <!-- Twitter -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://twitter.com/"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-twitter"><img src="images/gorjeo.png" alt="insta"></i></a>
+        
+              <!-- WhatsApp -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-whatsApp"><img src="images/whatsapp.png" alt="insta"></i></a>
+        
+              <!-- Instagram -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://www.instagram.com/"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-instagram"><img src="images/instagram (2).png" alt="insta"></i></a>
+        
+              <!-- tik tok -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="https://www.tiktok.com/es/"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-tiktok"><img src="images/tik-tok (1).png" alt="insta"></i></a>
+
+              <!-- email -->
+              <a
+                class="btn btn-link btn-floating btn-lg text-dark m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-email"><img src="images/correo-electronico.png" alt="insta"></i></a>
+            </section>
+            <!-- Section: Social media -->
+          </div>
+
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022  programador:
+            <a class="text-white" href="https://mdbootstrap.com/">Yury Rueda</a>
+          </div>
+        </footer>
+      </section>
+
+</body>
+</html>
+
+<script>
+  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+  })
+</script>
